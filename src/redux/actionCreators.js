@@ -1,4 +1,4 @@
-import { DECREMENT_BREAK, DECREMENT_SESSION, INCREMENT_BREAK, INCREMENT_SESSION, SET } from './actions.js';
+import { DECREMENT_BREAK, ISRUNNING, DECREMENT_SESSION, INCREMENT_BREAK, INCREMENT_SESSION, SET } from './actions.js';
 
 function decrement_break() {
     return {
@@ -27,4 +27,9 @@ function set() {
         type: SET
     }
 }
-export { decrement_break, decrement_session, increment_break, increment_session, set };
+function isRunning() {
+    return {
+        type: ISRUNNING
+    }
+}
+export { decrement_break, isRunning, decrement_session, increment_break, increment_session, set };

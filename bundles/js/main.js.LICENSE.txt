@@ -1,18 +1,8 @@
 /*!
- *  decimal.js v10.4.3
- *  An arbitrary-precision Decimal type for JavaScript.
- *  https://github.com/MikeMcl/decimal.js
- *  Copyright (c) 2022 Michael Mclaughlin <M8ch88l@gmail.com>
- *  MIT Licence
+ * Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
  */
-
-/**
- * @license Fraction.js v4.3.7 31/08/2023
- * https://www.xarg.org/2014/03/rational-numbers-in-javascript/
- *
- * Copyright (c) 2023, Robert Eisele (robert@raw.org)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- **/
 
 /**
  * @license React
@@ -46,9 +36,9 @@
 
 /**
  * @license React
- * use-sync-external-store-with-selector.production.min.js
+ * use-sync-external-store-with-selector.production.js
  *
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.

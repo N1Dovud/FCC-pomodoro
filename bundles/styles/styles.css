@@ -1,72 +1,77 @@
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: white; }
+
+:root {
+  font-size: 32px; }
 
 body {
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: #333333;
-  font-family: "Share Tech Mono", monospace; }
+  background-color: #1e555c;
+  min-height: 100vh; }
 
 main {
-  display: grid;
-  margin-top: 50px;
-  margin-bottom: 60px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  background-color: black; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px; }
 
-.display {
-  grid-column: 1 / 5;
-  color: white;
-  padding: 10px;
-  font-size: 1.7rem;
-  max-width: 350px; }
+.break-session {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; }
 
-.display :nth-child(1) {
-  min-height: 20px;
-  color: orange;
-  text-align: right;
-  vertical-align: text-top;
-  line-height: 20px;
-  word-wrap: break-word; }
+.break, .session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
-.display :nth-child(2) {
-  text-align: right;
-  line-height: 35px; }
+.buttons-and-break-length, .buttons-and-session-length {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; }
 
-#clear {
-  grid-column: 1 / 3;
-  background-color: #ac3939; }
+#break-decrement, #break-increment, #session-decrement, #session-increment {
+  font-weight: 900;
+  background-color: inherit; }
 
-#equals {
-  grid-row: 5 / 7;
-  grid-column: 4;
-  background-color: #004466; }
+.timer-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
-#zero {
-  grid-column: 1 / 3; }
+.timer {
+  padding: 60px;
+  border-radius: 20%;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  font-weight: 1200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px; }
+
+#start_stop, #reset {
+  margin: 20px 40px;
+  font-weight: 900; }
 
 button {
-  padding: 20px 35px;
-  font-size: 1.5rem;
+  border: none;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  padding: 10px !important;
+  background-color: #1e555c;
   color: white;
-  border: 0.5px solid black; }
+  cursor: pointer; }
 
-button:hover {
-  color: black;
-  border-color: white; }
-
-.operator {
-  background-color: #666666; }
-
-.number, #decimal {
-  background-color: #4d4d4d; }
-
-@media (max-width: 390px) {
-  button {
-    font-size: 1rem; }
-  .display {
-    font-size: 1.2rem;
-    max-width: 325px; } }
+h1 {
+  text-align: center; }
