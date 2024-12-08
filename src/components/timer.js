@@ -6,7 +6,6 @@ import { faStop, faPlay, faRotate } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 export default function Timer() {
     const { session: sessionLength, break: breakLength, isRunning: isTimeRunning }= useSelector(state => state);
-    console.log('sessionLength:', sessionLength);
     const [ time, setTime ] = useState(sessionLength * 60);
     const [ isSession, SetIsSession ] = useState(true);
     const dispatch = useDispatch();
@@ -58,7 +57,6 @@ export default function Timer() {
     }, [breakLength]);
 
     useEffect(() => {
-        console.log("isTimeRunning changed to:", isTimeRunning);
         let interval;
         if (isTimeRunning) {
             interval = setInterval(() => {
@@ -71,12 +69,8 @@ export default function Timer() {
                         SetIsSession(nextSession);
                         console.log("Is it session" + isSession)
                         if (nextSession){
-                            // const nextSessionLength = sessionLength;
-                            // return nextSessionLength * 60
-                            return sessionLength * 60
+                           return sessionLength * 60
                         } else {
-                            // const nextBreakLength = breakLength;
-                            // return nextBreakLength * 60
                             return breakLength * 60
                         }
                     }
