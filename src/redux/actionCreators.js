@@ -1,31 +1,30 @@
-import { UPDATE_CURRENT, SET_CURRENT, SET_EXPRESSION, UPDATE_EXPRESSION } from './actions.js';
+import { DECREMENT_BREAK, DECREMENT_SESSION, INCREMENT_BREAK, INCREMENT_SESSION, SET } from './actions.js';
 
-
-function set_current(payload) {
+function decrement_break() {
     return {
-        type: SET_CURRENT,
-        value: payload
+        type: DECREMENT_BREAK
     }
 }
 
-function update_current(payload) {
+function decrement_session() {
     return {
-        type: UPDATE_CURRENT,
-        value: payload
-    }
-}
-function set_expression(payload) {
-    return {
-        type: SET_EXPRESSION,
-        value: payload
+        type: DECREMENT_SESSION
     }
 }
 
-function update_expression(payload) {
+function increment_break() {
     return {
-        type: UPDATE_EXPRESSION,
-        value: payload
+        type: INCREMENT_BREAK
     }
 }
-
-export { set_current, update_current, set_expression, update_expression };
+function increment_session() {
+    return {
+        type: INCREMENT_SESSION
+    }
+}
+function set() {
+    return {
+        type: SET
+    }
+}
+export { decrement_break, decrement_session, increment_break, increment_session, set };
